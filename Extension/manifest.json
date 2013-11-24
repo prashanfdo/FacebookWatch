@@ -1,0 +1,22 @@
+{
+   "background": {
+      "scripts": [ ]
+   },
+   "content_scripts": [ {
+      "all_frames": true, 
+      "js": [ "main.js" ],
+      "matches": [ "http://www.facebook.com/*", "https://www.facebook.com/*"],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "description": "Facebook Timer Description",
+   "icons": { 
+    "128": "assets/icon128.png",
+	 "48": "assets/icon48.png",
+	  "16": "assets/icon16.png"
+   },
+   "manifest_version": 2,
+   "name": "Facebook Watch",
+   "permissions": [ "storage", "unlimited_storage", "http://*.facebook.com/*", "https://*.facebook.com/*" ],
+   "version": "0.1"
+}
